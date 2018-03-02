@@ -14,6 +14,7 @@
 		584C827B204903DC00CCF476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584C8279204903DC00CCF476 /* LaunchScreen.storyboard */; };
 		584C827E204903DC00CCF476 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 584C827D204903DC00CCF476 /* main.m */; };
 		584C82882049047C00CCF476 /* UITextField+ZKInputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 584C82872049047C00CCF476 /* UITextField+ZKInputLimit.m */; };
+		584C828C2049360000CCF476 /* UITextView+ZKInputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 584C828B2049360000CCF476 /* UITextView+ZKInputLimit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		584C82862049047C00CCF476 /* UITextField+ZKInputLimit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZKInputLimit.h"; sourceTree = "<group>"; };
 		584C82872049047C00CCF476 /* UITextField+ZKInputLimit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZKInputLimit.m"; sourceTree = "<group>"; };
 		584C828920492FC300CCF476 /* ZKTextInputLimit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKTextInputLimit.h; sourceTree = "<group>"; };
+		584C828A2049360000CCF476 /* UITextView+ZKInputLimit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZKInputLimit.h"; sourceTree = "<group>"; };
+		584C828B2049360000CCF476 /* UITextView+ZKInputLimit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZKInputLimit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +82,11 @@
 		584C82842049043B00CCF476 /* ZKTextInputLimit */ = {
 			isa = PBXGroup;
 			children = (
+				584C828920492FC300CCF476 /* ZKTextInputLimit.h */,
 				584C82862049047C00CCF476 /* UITextField+ZKInputLimit.h */,
 				584C82872049047C00CCF476 /* UITextField+ZKInputLimit.m */,
-				584C828920492FC300CCF476 /* ZKTextInputLimit.h */,
+				584C828A2049360000CCF476 /* UITextView+ZKInputLimit.h */,
+				584C828B2049360000CCF476 /* UITextView+ZKInputLimit.m */,
 			);
 			path = ZKTextInputLimit;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			files = (
 				584C8273204903DB00CCF476 /* ViewController.m in Sources */,
 				584C827E204903DC00CCF476 /* main.m in Sources */,
+				584C828C2049360000CCF476 /* UITextView+ZKInputLimit.m in Sources */,
 				584C8270204903DB00CCF476 /* AppDelegate.m in Sources */,
 				584C82882049047C00CCF476 /* UITextField+ZKInputLimit.m in Sources */,
 			);

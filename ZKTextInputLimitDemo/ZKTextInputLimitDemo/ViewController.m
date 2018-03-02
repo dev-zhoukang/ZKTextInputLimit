@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *maxLengthLabel;
 @property (weak, nonatomic) IBOutlet UIStepper *maxLengthStepper;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -23,12 +24,14 @@
     [super viewDidLoad];
     _maxLengthLabel.text = @(_maxLengthStepper.value).stringValue;
     _textField.maxLength = _maxLengthStepper.value;
+    _textView.maxLength = _maxLengthStepper.value;
 }
 
 - (IBAction)stepperAction:(UIStepper *)sender {
     _textField.text = @"";
     _maxLengthLabel.text = @(sender.value).stringValue;
     _textField.maxLength = sender.value;
+    _textView.maxLength = sender.value;
 }
 
 @end

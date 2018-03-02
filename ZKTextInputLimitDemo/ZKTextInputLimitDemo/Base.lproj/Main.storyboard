@@ -18,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UITextField" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7NJ-fd-48d">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UITextField" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7NJ-fd-48d">
                                 <rect key="frame" x="40" y="170" width="295" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gbt-Qe-tjX"/>
                                 </constraints>
@@ -52,12 +53,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mq7-NP-ZJP">
+                                <rect key="frame" x="40" y="210" width="295" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Zoe-gs-18b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7NJ-fd-48d" secondAttribute="trailing" constant="40" id="UQz-tc-9WX"/>
+                            <constraint firstItem="mq7-NP-ZJP" firstAttribute="top" secondItem="7NJ-fd-48d" secondAttribute="bottom" constant="10" id="ZAC-KU-Dnp"/>
                             <constraint firstItem="7NJ-fd-48d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="aDZ-4t-wmv"/>
                             <constraint firstItem="Ndk-Lg-FAk" firstAttribute="bottom" secondItem="x9i-WE-JUW" secondAttribute="bottom" id="cOb-4N-eCB"/>
+                            <constraint firstItem="mq7-NP-ZJP" firstAttribute="leading" secondItem="7NJ-fd-48d" secondAttribute="leading" id="jnb-FA-8QI"/>
+                            <constraint firstItem="mq7-NP-ZJP" firstAttribute="trailing" secondItem="7NJ-fd-48d" secondAttribute="trailing" id="khm-kw-bFU"/>
                             <constraint firstItem="7NJ-fd-48d" firstAttribute="top" secondItem="Ndk-Lg-FAk" secondAttribute="bottom" constant="10" id="ng4-PZ-nJ9"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ndk-Lg-FAk" secondAttribute="trailing" constant="20" symbolic="YES" id="umE-mE-3vx"/>
                             <constraint firstItem="Ndk-Lg-FAk" firstAttribute="leading" secondItem="x9i-WE-JUW" secondAttribute="trailing" id="vVc-zL-xn4"/>
@@ -70,6 +88,7 @@
                         <outlet property="maxLengthLabel" destination="Ndk-Lg-FAk" id="62p-aq-s2X"/>
                         <outlet property="maxLengthStepper" destination="0wH-2D-loM" id="ALm-wV-3tU"/>
                         <outlet property="textField" destination="7NJ-fd-48d" id="yI0-a7-dpq"/>
+                        <outlet property="textView" destination="mq7-NP-ZJP" id="OLb-46-9aI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

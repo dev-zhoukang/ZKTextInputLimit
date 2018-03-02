@@ -10,5 +10,6 @@
 #define ZKTextInputLimit_h
 
 #import "UITextField+ZKInputLimit.h"
+#import "UITextView+ZKInputLimit.h"
 
 #endif /* ZKTextInputLimit_h */
