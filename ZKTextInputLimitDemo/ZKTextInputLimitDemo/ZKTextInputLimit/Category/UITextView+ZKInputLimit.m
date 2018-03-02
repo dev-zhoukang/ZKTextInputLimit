@@ -16,7 +16,10 @@ static void *kMaxLength_;
 - (void)setMaxLength:(NSUInteger)maxLength {
     objc_setAssociatedObject(self, &kMaxLength_, @(maxLength), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     if (maxLength) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleTextDidChange:) name:UITextViewTextDidChangeNotification object:self];
+        [[NSNotificationCenter defaultCenter]
+         addObserver:self
+         selector:@selector(handleTextDidChange:)
+         name:UITextViewTextDidChangeNotification object:self];
     }
 }
 

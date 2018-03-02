@@ -18,7 +18,9 @@ static void *kMaxLength_;
     if (!maxLength) {
         return;
     }
-    [self addTarget:self action:@selector(handleTextEditingChanged:) forControlEvents:UIControlEventEditingChanged];
+    [self addTarget:self
+             action:@selector(handleTextEditingChanged:)
+   forControlEvents:UIControlEventEditingChanged];
 }
 
 - (NSUInteger)maxLength {

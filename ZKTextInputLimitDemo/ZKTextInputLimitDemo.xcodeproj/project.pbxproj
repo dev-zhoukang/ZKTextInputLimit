@@ -83,12 +83,20 @@
 			isa = PBXGroup;
 			children = (
 				584C828920492FC300CCF476 /* ZKTextInputLimit.h */,
+				584C828D20494CBA00CCF476 /* Category */,
+			);
+			path = ZKTextInputLimit;
+			sourceTree = "<group>";
+		};
+		584C828D20494CBA00CCF476 /* Category */ = {
+			isa = PBXGroup;
+			children = (
 				584C82862049047C00CCF476 /* UITextField+ZKInputLimit.h */,
 				584C82872049047C00CCF476 /* UITextField+ZKInputLimit.m */,
 				584C828A2049360000CCF476 /* UITextView+ZKInputLimit.h */,
 				584C828B2049360000CCF476 /* UITextView+ZKInputLimit.m */,
 			);
-			path = ZKTextInputLimit;
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     _maxLengthLabel.text = @(_maxLengthStepper.value).stringValue;
     _textField.maxLength = _maxLengthStepper.value;
     _textView.maxLength = _maxLengthStepper.value;
@@ -29,6 +30,8 @@
 
 - (IBAction)stepperAction:(UIStepper *)sender {
     _textField.text = @"";
+    _textView.text = @"";
+    
     _maxLengthLabel.text = @(sender.value).stringValue;
     _textField.maxLength = sender.value;
     _textView.maxLength = sender.value;
